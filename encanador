@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#include <stdio.h>
+
+int main(int argc, char* argv[]){
+    int nd, sal;
+  
+//declaracao de variaveis e formulas
+printf("numeros de dias trabalhados");
+scanf("%d", &nd );
+
+//pedir e receber as variaveis
+    sal = ((nd*20)*92)/100;
+
+printf ("o seu salario seria %d ", sal);
+
+
+//mostrar os resultados
+
+return 0;
+
+}
