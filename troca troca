@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(int argc, char* argv[]){
+    int a, b, c, d;
+    printf("coloque a primeira variavel A");
+    scanf ("%d", &a);
+    printf("coloque a segunda variavel B");
+    scanf ("%d", &b);
+    c = b;
+    d = a;
+    printf("\nO valor A sera \n%d \n", a );
+    printf("\nO valor B sera \n%d \n", b );
+
+    printf("\nOs valores trocados serao respectivamente: \n%d \n%d ", c, d);
+
+    return 0;
+    }
