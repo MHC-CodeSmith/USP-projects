@@ -1,16 +1,25 @@
 #include <stdio.h>
 int main(int argc, char* argv[]){
     int a, b, c, d;
+    //estabelecendo variaveis inteiras
+
     printf("coloque a primeira variavel A");
     scanf ("%d", &a);
+    //recrutando variavel a
+
     printf("coloque a segunda variavel B");
     scanf ("%d", &b);
+    //recrutando variavel b
+
     c = b;
     d = a;
+    //realizando a troca
     printf("\nO valor A sera \n%d \n", a );
     printf("\nO valor B sera \n%d \n", b );
+//mostrando as variaveis estipuladas
 
     printf("\nOs valores trocados serao respectivamente: \n%d \n%d ", c, d);
+    //mostrando o resultado da troca
 
     return 0;
     }
