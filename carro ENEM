@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    float consumo, km, dL;
+printf("me de a distancia em km");
+scanf( "%f", &km);
+
+printf("me de o consumo em l");
+scanf("%f", &consumo);
+
+dL= km/consumo;
+
+if (dL<8) {
+    printf("VENDA O CARRO");
+}
+ else if (8<=dL  || dL<12){
+    printf("Economico");
+}
+
+else if (12<= dL){
+    printf("super economico");
+}
+}
