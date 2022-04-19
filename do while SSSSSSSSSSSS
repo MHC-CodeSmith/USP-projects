@@ -1,11 +1,17 @@
 void main()
+//n precisa colocar o return
 {
 char ch;
-printf("\nDigite algum algarismo ( s eh a condicao de saida): ");
+//estabeleci variavel
+printf("\nDigite algum algarismo ( s ou S eh a condicao de saida): ");
+//pede para escrever a variavel e recebe o seu valor
 do {
 printf("\nO algarismo digitado e %c", ch);
+//mostra o algarismo digitado
 ch=getchar();
 }
 while (ch!= 's'&& ch!= 'S');
+//condicão para sair do loop
 printf("\nSaindo do loop\n");
+//mostrar que saiu do loop
 }
