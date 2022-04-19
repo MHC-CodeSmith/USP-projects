@@ -1,0 +1,11 @@
+void main()
+{
+char ch;
+printf("\nDigite algum algarismo ( s eh a condicao de saida): ");
+do {
+printf("\nO algarismo digitado e %c", ch);
+ch=getchar();
+}
+while (ch!= 's'&& ch!= 'S');
+printf("\nSaindo do loop\n");
+}
