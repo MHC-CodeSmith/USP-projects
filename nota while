@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(int argc, char* argv[]){
+    float nota, maior, menor;
+    nota = maior = 0;
+    menor = 11;
+    while (nota >= 0) {
+        printf("\ninforme uma nota: nota negativa para terminar\n");
+        scanf("%f", &nota);
+        if(nota > maior)
+            maior = nota;
+        if(nota < menor && nota>=0)
+
+            menor = nota;
+             printf("A menor nota eh %f e a maior nota eh %2.f", menor, maior);
+                }
+
+printf("\nSaindo do loop\n");
+return 0;
+}
