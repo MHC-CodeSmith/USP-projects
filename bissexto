@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(int argc, char* argv[]){
+     int ANO;
+     printf("\n digite um ano negativo para encerrar");
+ while (ANO >= 0) {
+
+  printf("\n \n \n informe um ano\n");
+    scanf("%d", &ANO);
+
+    if(ANO>=0){
+    if ( ANO%400 == 0){printf("\n O ano %d eh bissexto", ANO);}
+    else {  printf("\n O ano %d nao eh bissexto", ANO);}
+    }
+}
+}
