@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+     int X, Y, z, soma, soma2, aux;
+     printf("\n digite x");
+     scanf("%d", &X);
+     printf("\n digite y");
+     scanf("%d", &Y);
+     soma=0;
+
+     if (X > Y) {
+        aux = X;
+        X = Y;
+        Y = aux;
+
+     }
+
+    z = X;
+        while( z <= Y){
+
+        soma = soma + z;
+        z++;
+    }
+
+
+
+    soma2 = soma - (X + Y);
+    printf("\n A soma dos numeros de x a y eh %d", soma2 );
+    printf("\n \n A soma dos numeros de x a y, incluindo x e y eh %d  ", soma);
+    }
