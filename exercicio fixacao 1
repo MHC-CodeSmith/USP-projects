@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(int argc, char* argv[]){
+     int contap, contrp, TAL;
+     float nota, soma, media, porcent;
+     contrp = 0;
+     contap = 0;
+     soma = 0;
+
+  printf("\ninforme as notas de classe: nota negativa para terminar\n");
+    scanf("%f", &nota);
+
+    while (nota >= 0) {
+
+
+        soma= soma + nota;
+        if(nota >= 5){
+         contap = contap +1 ;}
+
+        else{
+         contrp = contrp +1  ;}
+
+  printf("\ninforme as notas de classe: nota negativa para terminar\n");
+    scanf("%f", &nota);
+    }
+    TAL= contrp + contap;
+    media = soma/TAL;
+    porcent= (contap/(float)TAL)*100;
+    printf("o numero de nota acima da media ou igual eh %d e o numero de  notas abaixo da media eh %d", contap, contrp);
+    printf( "\n A media geral eh: %f", media);
+    printf("\n A porcentagem dos alunos acima da media eh %f", porcent);
+}
