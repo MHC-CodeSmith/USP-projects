@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+int main(void)
+{
+    int count = 0;
+    int number;
+
+    char text[20];
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    sprintf(text, "%d", number);
+ while (number!=0){
+    number=number/10;
+    count++;}
+    printf("\nYou have entered: %s", text);
+    int i;
+
+    printf("Valor da variavel text = %s\n", text);
+
+    for (i=0; i<count; i++)
+    {
+        printf("Valor do elemento %d da string = %c\n",i, text[i]);
+    }
+
+    getch();
+    return 0;
+}
