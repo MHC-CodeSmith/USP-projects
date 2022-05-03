@@ -1,4 +1,5 @@
-void main()
+#include <stdio.h>
+ int main()
 //n precisa colocar o return
 {
 char ch;
@@ -9,9 +10,13 @@ do {
 printf("\nO algarismo digitado e %c", ch);
 //mostra o algarismo digitado
 ch=getchar();
+    getchar();
 }
 while (ch!= 's'&& ch!= 'S');
 //condicão para sair do loop
 printf("\nSaindo do loop\n");
 //mostrar que saiu do loop
+return 0;
 }
+
+
