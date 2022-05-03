@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main( )
+{
+    int i,nu, ultimo, primeiro, resto;
+    printf("digite um numero inteiro")
+    scanf("%d", &nu)
+    int resto = 0
+                while(nu!= resto)
+                    for ( i=1; i<=10; i++);
+    nu%10
+
+
+
+    return 0;
+}
+
+ultimo = nu%10
+         primeiro =
+
+
+
+
+             for ( i=1; i<=10; i++);
