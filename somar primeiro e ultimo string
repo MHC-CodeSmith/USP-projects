@@ -1,19 +1,24 @@
 #include <stdio.h>
-#include <conio.h>
+//#include <conio.h>
+
+//#include <stdlib.h>
+//#include <string.h>
 int main(void)
 {
     int count = 0;
-    int number;
-
+    int number, soma, primeiro, ultimo;
+    char pstr, ustr;
     char text[20];
 
     printf("Enter a number: ");
     scanf("%d", &number);
 
     sprintf(text, "%d", number);
- while (number!=0){
-    number=number/10;
-    count++;}
+    while (number!=0)
+    {
+        number=number/10;
+        count++;
+    }
     printf("\nYou have entered: %s", text);
     int i;
 
@@ -23,7 +28,14 @@ int main(void)
     {
         printf("Valor do elemento %d da string = %c\n",i, text[i]);
     }
+    pstr= text[0];
+    ustr= text[i-1];
 
+    primeiro = pstr-'0';
+    printf("primeiro %d", primeiro);
+    ultimo = ustr-'0';
+    soma= primeiro + ultimo;
+    printf(" A soma do primeiro algarismo com o ultimo eh %d", soma);
     getch();
     return 0;
 }
