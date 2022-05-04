@@ -1,23 +1,42 @@
-#include <stdio.h>
+//ALUNO:MATHEUS HIPOLITO CARVALHO
+
+#include <stdio.h> //adicionando a biblioteca
 int main( )
 {
-    int i,nu, ultimo, primeiro, resto;
-    printf("digite um numero inteiro")
-    scanf("%d", &nu)
-    int resto = 0
-                while(nu!= resto)
-                    for ( i=1; i<=10; i++);
-    nu%10
+    int i,nu, ultimo, primeiro, cd, soma; //estabelecendo as variaveis inteiras
 
+    printf("digite um numero inteiro"); //pedindo ao usuario pelo numero
+    scanf("%d", &nu); //transformando a resposta na variavel numero
+    cd = nu/10; //cd está funcionando como uma condição para descobrir se o numero tem um ou mais algarismos
+    ultimo=nu-(nu/10)*10; //a partir do comando int, ao realizarmos essa operação: (x/10)*10 o ultimo valor de x será desconsiderado, fazendo assim q seja possivel descobri-lo a parttir da diferença entre o numero real e esse numero sem o ultimo valor
+    if(cd == 0 ) //caso cd> for maior ou menor que 0 o numero terá mais de um digito
+    {
+        soma = nu*2;
+        printf("\nA soma do ultimo e primeiro algarismo sera:\n %d", soma);//a soma sera o dobro pois como ha apenas um algarismo o ultimo e primeiro coincidem
+    }
+    else if(nu<0) //estabelecendo a linha de codigo para numeros negativos
+    {
+        do
+        {
 
+            nu=nu/10;//dividindo por 10 até a função while parar, ou seja até o numero ser maior que 10 e diferente de 0
+        }
+        while(nu!=0 && nu>10 );
+        primeiro=nu;//o primeiro numero (contando da esquerda para a direita) será portanto valor de saída do loop, o primeiro numero para o qual a divisão seja menor que 10.
+        soma= (primeiro + ultimo)*(-1);//fazer a soma ficar positiva
+        printf("\nA soma do ultimo e primeiro algarismo sera:\n %d", soma); //mostrando a resposta
+    }
+    else
+    {
+        do
+        {
+            nu=nu/10;
+        }
+        while(nu!=0 && nu>10 );
+        primeiro=nu;
+        soma= primeiro + ultimo;
+        printf("\nA soma do ultimo e primeiro algarismo sera:\n %d", soma);
+    }
 
     return 0;
 }
-
-ultimo = nu%10
-         primeiro =
-
-
-
-
-             for ( i=1; i<=10; i++);
