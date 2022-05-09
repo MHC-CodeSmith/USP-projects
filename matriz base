@@ -1,0 +1,21 @@
+{
+    int lin, col;
+
+    int m[LIN][COL];
+
+            for ( lin = 0; lin < LIN ; lin++)
+                for ( col = 0; col < COL; col++)
+                {
+                    printf("Informe o elemento a[%d,%d]: ", lin, col);
+                    scanf("%d", &m[lin][col] );
+                }
+                for(int lin=0; lin< LIN; lin++){
+    for (int col=0; col<COL; col++){
+        printf("\t%d", m[lin][col]);
+        }
+        printf("\n\n");
+
+        }
+
+
+}
