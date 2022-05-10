@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define SIZE 4
+
+int main ()
+{
+    int i,n;
+    int arrin[SIZE];
+    srand(time(NULL));
+    for (i=0; i < SIZE; i++)
+    {
+        arrin[i]=rand()%20;
+
+        printf("%d ", arrin[i] );
+    }
+    for (n=(SIZE-1); n>0; n--)
+    {
+        arrin[i] = arrin[n];
+    }
+    printf("\nvetor ao contrario %d", arrin[i]);
+    return 0;
+}
