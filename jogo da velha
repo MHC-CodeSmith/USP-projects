@@ -1,0 +1,34 @@
+//JOGO DA VELHA
+// escolher os caracteres dos jogadores
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define LIN 3
+#define COL 3
+int main()
+{
+    //printf("Escolha um caractere X ou O, o X comeca");
+//scanf("%d %d", );
+
+//criar a matriz vazia 3 por 3
+    char m[LIN][COL];
+    int lin, col;
+    for ( lin = 0; lin < LIN ; lin++){
+        for ( col = 0; col < COL; col++)
+        {
+            printf("Informe o elemento a[%d,%d]: ", lin, col);
+            scanf("%c", m[lin][col] );
+        }
+    }
+    for(int lin=0; lin< LIN; lin++)
+    {
+        for (int col=0; col<COL; col++)
+        {
+            printf("\t%c", m[lin][col]);
+        }
+        printf("\n\n");
+    }
+}
+//a cada rodada acrecentar a jogada de cada um na matriz
+// criar uma função que verifique a cada rodada se a jogada foi valida, se deu velha ou se alguem ganhou
+//caso alguem ganhe exprimir ( jogador X/O ganhou), caso der velha exprimir (deu velha), caso a jogada for invalida exprimir ( jogada invalida tente de novo)
