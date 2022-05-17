@@ -1,0 +1,60 @@
+#include <math.h>
+#include <stdio.h>
+//#define SIZE 10
+//int randvetor(){
+//  int SIZE;
+//  printf("defina o tamanho dos vetores");
+//  scanf("%d", &SIZE);
+//  int i;
+// int arrin[SIZE];
+//  srand(time(NULL));
+
+//   for (i=0; i < SIZE; i++)
+//    {
+//       arrin[i]=rand()%20;
+
+//      printf("%d ", arrin[i] );
+//  }
+//    arrin[i];
+//   return (arrin[i]);
+//}
+
+int SIZE;
+int avaliaromaior(int arrin[SIZE]);
+int main()
+{
+    printf("defina o tamanho dos vetores");
+     scanf("%d", &SIZE);
+    int i;
+    int arrin[SIZE];
+    srand(time(NULL));
+
+    for (i=0; i < SIZE; i++)
+    {
+        arrin[i]=rand()%20;
+
+        printf("%d ", arrin[i] );
+    }
+
+
+    int res;
+    res= avaliaromaior(arrin);
+
+    printf("o maior vetor eh %d", res);
+    return(0);
+}
+int avaliaromaior(int arrin[SIZE])
+{
+    int i;
+    int maior;
+     maior = arrin[0] ;
+    for (i=0; i < SIZE; i++)
+    {
+        if (arrin[i]>maior)
+        {
+            maior = arrin[i];
+        }
+
+    }
+     return (maior);
+}
