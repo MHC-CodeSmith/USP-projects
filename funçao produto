@@ -1,0 +1,23 @@
+#include <math.h>
+#include <stdio.h>
+int produto (int n1, int n2, int n3);//definindo função para multiplicar
+int main()
+{
+
+    int n1, n2, n3, res; //esclarecendo as variaveis
+    printf("digite um numero");//pedindo um valor
+    scanf("%d", &n1); //capturando esse 
+    printf("digite um numero");
+    scanf("%d", &n2);
+    printf("digite um numero");
+    scanf("%d", &n3);
+    res= produto(n1,n2,n3);
+    printf("produto %d", res);
+    return 0;
+}
+int produto (int n1, int n2, int n3)
+{
+    int res;
+    res= n1*n2*n3;
+    return(res);
+}
