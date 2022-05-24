@@ -1,0 +1,41 @@
+#include <string.h>
+#include <stdio.h>
+//definição e declaração (e.g. estrutura: pessoa e nome: estudante)
+int i;
+struct registro
+{
+    char nome[30];
+    char snome[30];
+    int idade;
+};
+void imprimircliente (struct registro[3], int i);
+int main ()
+{
+    struct registro cliente[3];
+//atribuição
+    strcpy(cliente[0].nome,"Casaac");
+    strcpy(cliente[0].snome,"Solonso");
+    cliente[0].idade = 112;
+//copiando registro
+    strcpy(cliente[1].nome,"Redpo");
+    strcpy(cliente[1].snome,"Innicchina");
+    cliente [1].idade = 81;
+
+    strcpy(cliente[2].nome,"Laupa");
+    strcpy(cliente[2].snome,"Correia");
+    cliente [2].idade = 91;
+    strcpy(cliente[3].nome,"oivacto");
+    strcpy(cliente[3].snome,"ciulusferros");
+    cliente [3].idade = 91;
+    imprimircliente(cliente,3);
+    return 0;
+}
+
+void imprimircliente (struct registro cliente[3], int i)
+{
+    printf("\n%s",cliente[i].nome);
+    printf("\n%s",cliente[i].snome);
+    printf("\n%d",cliente [i].idade);
+
+}
+
