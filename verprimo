@@ -1,0 +1,30 @@
+#include <math.h>
+#include <stdio.h>
+void verprimo ( int n1);
+int main()
+{
+
+    int n1, res; //esclarecendo as variaveis
+    printf("digite um numero");//pedindo um valor
+    scanf("%d", &n1); //capturando esse valor
+    verprimo(n1);
+    return 0;
+}
+void verprimo (int n1)
+{
+    int divisor, res;
+
+    for (divisor=2; divisor<=n1; divisor ++)
+    {
+
+        res=n1%divisor;
+        if(res==0 && divisor<=n1)
+        {
+            printf("\n numero nao primo");
+        }
+        else if (res==0 && divisor==n1)
+        {
+            printf("\n numero primo");
+        }
+    }
+}
