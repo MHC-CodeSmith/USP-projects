@@ -1,0 +1,26 @@
+#include <stdio.h>
+void catchingvalors (int *n1, int *n2);
+void trocatroca (int *n1, int *n2 );
+int main () {
+int n1, n2;
+catchingvalors (&n1, &n2);
+trocatroca (&n1, &n2);
+return 0;
+}
+void catchingvalors (int *n1, int *n2){
+
+ printf("digite um numero");
+    scanf("%d", n1);
+    printf("digite um numero");
+    scanf("%d", n2);
+    printf("%d %d\n", *n1, *n2 );
+}
+
+void trocatroca (int *n1, int *n2){
+    int ax;
+    ax = *n1;
+    *n1 = *n2;
+    *n2 = ax;
+
+printf("%valores trocados sao %d %d", *n1, *n2);
+}
