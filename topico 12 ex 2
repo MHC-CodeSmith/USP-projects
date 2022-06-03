@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define SIZE 10
+void pegarpont(int *arrin);
+int main () {
+int i;
+int arrin[SIZE];
+srand(time(NULL));
+
+for (i=0; i < SIZE; i++){
+        arrin[i]=rand()%20;
+}
+pegarpont(arrin);
+return 0;
+}
+void pegarpont( int *arrin){
+int *pi;
+pi = &arrin[3];
+printf("%d", pi[0]);
+}
